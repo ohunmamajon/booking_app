@@ -1,3 +1,4 @@
+import 'package:booking_app/screens/home_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
 
   final appScreens = [
-    const Center(child: Text("Home")),
+    const HomeScreen(),
     const Center(child: const Text("Search")),
     const Center(child: const Text("Tickets")),
     const Center(child: const Text("Profile"))
@@ -29,9 +30,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("My tickets"),
-      ),
       body: appScreens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _onItemTapped,
