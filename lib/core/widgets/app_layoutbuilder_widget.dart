@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppLayoutbuilderWidget extends StatelessWidget {
-  const AppLayoutbuilderWidget({super.key, required this.randomDivider});
+  const AppLayoutbuilderWidget({super.key, required this.randomDivider, this.width = 3});
   final int randomDivider;
-
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +12,8 @@ class AppLayoutbuilderWidget extends StatelessWidget {
       return Flex(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         direction: Axis.horizontal, children:
-        List.generate((constraints.constrainWidth()/randomDivider).floor(), (index) => const SizedBox(
-          width: 3,height: 1, child: DecoratedBox(decoration:
+        List.generate((constraints.constrainWidth()/randomDivider).floor(), (index) => SizedBox(
+          width: width,height: 1, child: const DecoratedBox(decoration:
           BoxDecoration(color: Colors.white)),
         ))
         ,);
