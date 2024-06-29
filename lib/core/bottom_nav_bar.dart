@@ -1,4 +1,5 @@
-import 'package:booking_app/screens/home_screen.dart';
+import 'package:booking_app/screens/home/home_screen.dart';
+import 'package:booking_app/screens/search/search_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   final appScreens = [
     const HomeScreen(),
-    const Center(child: const Text("Search")),
+    const SearchScreen(),
     const Center(child: const Text("Tickets")),
     const Center(child: const Text("Profile"))
   ];

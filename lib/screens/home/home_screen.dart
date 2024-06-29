@@ -3,13 +3,13 @@ import 'package:booking_app/core/res/styles/app_styles.dart';
 import 'package:booking_app/core/utils/app_json.dart';
 import 'package:booking_app/core/widgets/app_double_text.dart';
 import 'package:booking_app/core/widgets/ticket_view.dart';
-import 'package:booking_app/screens/widgets/hotel.dart';
+import 'package:booking_app/screens/home/widgets/hotel.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../core/utils/app_routes.dart';
+import '../../core/utils/app_routes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                       height: 50,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage(AppMedia.logo))),
                     )
                   ],

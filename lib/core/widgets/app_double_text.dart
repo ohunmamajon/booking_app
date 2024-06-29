@@ -1,7 +1,4 @@
 import 'package:booking_app/core/res/styles/app_styles.dart';
-import 'package:booking_app/core/utils/app_routes.dart';
-import 'package:booking_app/screens/all_tickets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppDoubleText extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:booking_app/core/bottom_nav_bar.dart';
-import 'package:booking_app/screens/all_tickets.dart';
+import 'package:booking_app/screens/home/all_tickets.dart';
 import 'package:flutter/material.dart';
 
 void main() {
